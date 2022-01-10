@@ -1,5 +1,3 @@
-<!-- START - REMOVE THIS IN STEP 4 -->
-
 # Welcome to SWORDS
 
 Welcome to the **S**can and revie**W** of **O**pen **R**esearch **D**ata and **S**oftware (**SWORDS**) project. The SWORDS project is a powerful framework to gain insights in the open source activities of your, but not limited to, university or research institute. This repository is the start of your own implementation for your organisation! Read this part carefully. For any questions, please use the issue tracker. 
@@ -11,10 +9,10 @@ This repository contists of 2 parts, the instruction and the template. The instr
 1. Define a name for your project. The recommended name is SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}. 
 2. [Create a repository from the SWORDS template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) with the name as defined in step 1. 
 3. Replace all fields in the README of your repostitory starting with `{INSERT ...}` by your details of your project and organisation. 
-4. Delete in the README everything between `<!-- START - REMOVE THIS IN STEP 4 -->` and `<!-- END - REMOVE THIS IN STEP 4 -->`. 
+4. Delete in the README everything between `<!-- REMOVE EVERYTHING BEFORE THIS LINE IN STEP 4 -->`. 
 
 ## <<< The template starts here >>>
-<!-- END - REMOVE THIS IN STEP 4 -->
+<!-- REMOVE EVERYTHING BEFORE THIS LINE IN STEP 4 -->
 
 # SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}
 
