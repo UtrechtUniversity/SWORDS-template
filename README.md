@@ -29,6 +29,14 @@ This repository implements for the [**S**can and revie**W** of **O**pen **R**ese
   <!-- For example SWORDS@UU -->
 </p>
 
+<!-- Example of logo for your organisation
+
+<p align="center">
+  <img src="https://www.uu.nl/sites/default/files/styles/image_1600xn/public/cm_hs_new_logo_2021.png">
+</p>
+
+-->
+
 
 - This project is a collaboration of the Research IT and ICS Department, supported by the Open Science Platform. In order to promote open science, Utrecht University has launched the Open Science Programme. To add focus to specific topics, there are four tracks within the Programme: Open access, FAIR data and software, Public engagement, Recognition and rewards. Within the track of FAIR data and software, a research project regarding the Scan and revieW of Open Research Data and Software at Utrecht University (SWORDS@UU) has been conducted.  
 
