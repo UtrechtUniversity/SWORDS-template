@@ -37,13 +37,11 @@ This repository implements for the [**S**can and revie**W** of **O**pen **R**ese
 
 Conducting science in a open and collaborative way is very important for greater scientific and societal impact (https://www.nwo.nl/en/open-science). The Open Science movement is therefore actively promoting and advancing openness in academic publications, data, software, and other types of output. Major steps have been made of the last years, however, there is still a lot to improve and win. As a result of this movement towards more open research output, is the increase of code and software published by researcher on online platforms. The use and reuse of open source (research) software and code is widespread nowadays. 
 
-For (research) organisations, it can be interesting to have insights into the contributions and activities in open source software projects. This information can be used to improve, connect, train their members or employees. 
+For (research) organisations, it can be interesting to have insights into the contributions and activities in open source software projects. Especially because activities of members, researchers, or employees can be divided over multiple user profiles and platforms (e.g. GitHub and GitLab). Having an overview of the activity, contents, and quality can be useful for various reasons like connecting initiatives, improve quality, and reward and recognize contributions. The SWORDS framework was introduced to help collect insights and help to access quality. 
 
+<!-- Introduce FAIR -->
 
 ## The SWORDS framework
-
-
-- This project is a collaboration of the Research IT and ICS Department, supported by the Open Science Platform. In order to promote open science, Utrecht University has launched the Open Science Programme. To add focus to specific topics, there are four tracks within the Programme: Open access, FAIR data and software, Public engagement, Recognition and rewards. Within the track of FAIR data and software, a research project regarding the Scan and revieW of Open Research Data and Software at Utrecht University (SWORDS@UU) has been conducted.  
 
 - Its goal is to analyze the FAIRness of GitHub repositories of Utrecht University researchers and see how they develop and manage software. While the analysis and data collection is done for Utrecht University researchers only, the purpose of this research is to serve as a template for other researchers to scan and review repositories for their university as well.
 
@@ -64,6 +62,8 @@ For more information about the phases, please look into the corresponding subfol
 </p>
 
 ## Contact
+
+Within the track of FAIR data and software, a research project regarding the Scan and revieW of Open Research Data and Software at Utrecht University (SWORDS@UU) has been conducted.
 
 For technical questions, you contact either [Keven Quach](https://github.com/kequach) or [Jonathan de Bruin](https://github.com/J535D165) or open an issue on GitHub.
 
@@ -100,3 +100,5 @@ year = {2021}
 ## Attribution
 
 <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+
