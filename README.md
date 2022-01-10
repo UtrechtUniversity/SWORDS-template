@@ -47,7 +47,7 @@ For more information about the phases, please look into the corresponding subfol
 ## Pipeline
 
 <p align="center">
-  <img src="docs/Complete_pipeline.png" height="1000">
+  <img src="SWORDS_basic_flow.drawio.png" height="1000">
 </p>
 
 ## Contact
