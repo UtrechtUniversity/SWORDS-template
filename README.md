@@ -29,13 +29,18 @@ This repository implements for the [**S**can and revie**W** of **O**pen **R**ese
   <!-- For example SWORDS@UU -->
 </p>
 
-<!-- Example of logo for your organisation
-
 <p align="center">
-  <img src="https://www.uu.nl/sites/default/files/styles/image_1600xn/public/cm_hs_new_logo_2021.png">
+  <img src="your_logo.svg">
 </p>
 
--->
+## Background
+
+Conducting science in a open and collaborative way is very important for greater scientific and societal impact (https://www.nwo.nl/en/open-science). The Open Science movement is therefore actively promoting and advancing openness in academic publications, data, software, and other types of output. Major steps have been made of the last years, however, there is still a lot to improve and win. As a result of this movement towards more open research output, is the increase of code and software published by researcher on online platforms. The use and reuse of open source (research) software and code is widespread nowadays. 
+
+For (research) organisations, it can be interesting to have insights into the contributions and activities in open source software projects. This information can be used to improve, connect, train their members or employees. 
+
+
+## The SWORDS framework
 
 
 - This project is a collaboration of the Research IT and ICS Department, supported by the Open Science Platform. In order to promote open science, Utrecht University has launched the Open Science Programme. To add focus to specific topics, there are four tracks within the Programme: Open access, FAIR data and software, Public engagement, Recognition and rewards. Within the track of FAIR data and software, a research project regarding the Scan and revieW of Open Research Data and Software at Utrecht University (SWORDS@UU) has been conducted.  
