@@ -96,4 +96,4 @@ For contact about this implementation of the SWORDS project, SWORDS@{INSERT YOUR
 
 For general questions and remarks about the SWORDS project and the template can be posted on the [issue tracker of the SWORDS template](https://github.com/UtrechtUniversity/SWORDS-template/issues). You can also contact either [Jonathan de Bruin](https://github.com/J535D165) or [Keven Quach](https://github.com/kequach). 
 
-The SWORDS project is an idea of the FAIR Data and Software working group of the Utrecht University Open Science Programme.
+The SWORDS project is an idea of the FAIR Data and Software working group of the [Utrecht University Open Science Programme](https://www.uu.nl/en/research/open-science).
