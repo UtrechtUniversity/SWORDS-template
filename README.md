@@ -16,7 +16,7 @@ This repository contists of 2 parts, the instruction and the template. The instr
 
 # SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}
 
-![banner](docs/banner.png)
+![banner](https://github.com/UtrechtUniversity/SWORDS-UU/blob/main/docs/banner.png)
 
 This repository implements for the [**S**can and revie**W** of **O**pen **R**esearch **D**ata and **S**oftware (SWORDS)](https://github.com/UtrechtUniversity/SWORDS-template) framework. SWORDS is a powerful tool to gain insights in the open source activities of your, but not limited to, university or research institute. Studies show that open source contributions can be very benificial for organisation and society. SWORDS is devided into 3 stages that can be exectued and analyzed standalone: finding user profiles associated to your organisation, extract relevant repositories, and study the contents of the respositories. 
 
