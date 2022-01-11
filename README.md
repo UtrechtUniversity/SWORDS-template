@@ -43,49 +43,36 @@ For (research) organisations, it can be interesting to have insights into the co
 
 ## The SWORDS framework
 
+
 - Its goal is to analyze the FAIRness of GitHub repositories of Utrecht University researchers and see how they develop and manage software. While the analysis and data collection is done for Utrecht University researchers only, the purpose of this research is to serve as a template for other researchers to scan and review repositories for their university as well.
 
-The project is split into 3 phases that correspond to the folder structure. The following hyperlinks lead to the detailed readme of each phase.
 
-1. [User collection](collect_users/README.md)
-2. [Repository collection](collect_repositories/README.md)
-3. [Variable collection](collect_variables/README.md)
 
-Each phase consists of several Python scripts and file outputs, mainly in .csv format. There is also a corresponding interactive data analysis jupyter notebook file in each phase. You can find the whole pipeline as a diagram under [Pipeline](#flowchart).
+The SWORDS framework consists of three mostly-independent steps. Each step is described below and detailed information and instructions can be found in the links. 
 
-For more information about the phases, please look into the corresponding subfolders for further information on installation and usage. Note that every .csv output has a datestamp column named **date**.
-
-## Pipeline
+1. **[Find user profiles associated to organisation](collect_users/)**. In this first step of the framework, multiple strategies are available to find users on GitHub and GitLab that are members or employees of your organisation. By using multiple collection strategies, the recall is considered to be high. The findability of members or employees is one of the output variables of this step. A structured list of users is used as input for the next step.
+2. **[Collect relevant repositories](collect_repositories/)**. In the second step, the repositories of the users collected in the previous step are collected and filtered. Not all repositories are research output. These repositories are filted out automatically and/or manually.
+3. **[Study and analyze repositories](collect_variables/)**. In this step, research repositories are examined and studied on various quantitiative and qualitative properties. One can think about quality assesments, documentation availablity, FAIRness scores. 
 
 <p align="center">
   <img src="SWORDS_basic_flow.drawio.png">
 </p>
 
-## Contact
+The SWORDS framework is written in Python 3.6+. The SWORDS framework implements the reproducible project structure as proposed by XXX(XXXX) for each step of the framework. For more information about the phases, please look into the corresponding subfolders for further information on installation and usage. All output data is stored in output folders. There is also a corresponding interactive data analysis jupyter notebook file in each step. This notebook can be used for results. 
 
-Within the track of FAIR data and software, a research project regarding the Scan and revieW of Open Research Data and Software at Utrecht University (SWORDS@UU) has been conducted.
+## Usage
 
-For technical questions, you contact either [Keven Quach](https://github.com/kequach) or [Jonathan de Bruin](https://github.com/J535D165) or open an issue on GitHub.
+WIP
 
-## Contributors
-
-This project was implemented by de Bruin, J., Quach, K., Slewe, C., & Lamprecht, A. (2021).
-
-### Citation
+## Citation
 
 Use this citation for citing the SWORDS implementation of Utrecht University.
 ```
-@software{de_Bruin_Scan_and_revieW_2021,
-author = {de Bruin, Jonathan and Quach, Keven and Slewe, Christopher and Lamprecht, Anna-Lena},
-month = {9},
-title = {{Scan and revieW of Open Research Data and Software at Utrecht University}},
-url = {https://github.com/UtrechtUniversity/SWORDS-UU},
-version = {1.0.0},
-year = {2021}
-}
+{INSERT CITATION DETAILS}
 ```
 
-Use this citation for citing the SWORDS template.
+To cite the SWORDS project and the SWORDS template, use 
+
 ```
 @software{de_Bruin_Scan_and_revieW_2021,
 author = {de Bruin, Jonathan and Quach, Keven and Slewe, Christopher and Lamprecht, Anna-Lena},
@@ -97,8 +84,16 @@ year = {2021}
 }
 ```
 
-## Attribution
+## License
 
-<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+The SWORDS project template is published under the [MIT License](/license).
 
+Icons of the banner are made by [Freepik](https://www.freepik.com "Freepik") from [www.flaticon.com](https://www.flaticon.com/ "Flaticon").
 
+## Contact
+
+For contact about this implementation of the SWORDS project, SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}, post an issue on the [issue tracker](/issues) or contact {INSERT YOUR EMAIL}. 
+
+For general questions and remarks about the SWORDS project and the template can be posted on the [issue tracker of the SWORDS template](https://github.com/UtrechtUniversity/SWORDS-template/issues). You can also contact either [Jonathan de Bruin](https://github.com/J535D165) or [Keven Quach](https://github.com/kequach). 
+
+The SWORDS project is an idea of the FAIR Data and Software working group of the Utrecht University Open Science Programme.
