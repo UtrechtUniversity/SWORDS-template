@@ -1,0 +1,6 @@
+pandas
+matplotlib
+seaborn
+scipy
+scikit_learn
+simplejson

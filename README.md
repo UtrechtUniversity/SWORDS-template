@@ -16,7 +16,7 @@ This repository consists of 2 parts, the instruction and the template. The instr
 
 # SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}
 
-![banner](https://github.com/UtrechtUniversity/SWORDS-UU/blob/main/docs/banner.png)
+![banner](docs/banner.png)
 
 This repository implements for the [**S**can and revie**W** of **O**pen **R**esearch **D**ata and **S**oftware (SWORDS)](https://github.com/UtrechtUniversity/SWORDS-template) framework. SWORDS is a powerful tool to gain insights in the open source activities of your, but not limited to, university or research institute. Studies show that open source contributions can be very benificial for organisations and society. SWORDS is divided into 3 stages that can be exectued and analyzed standalone: finding user profiles associated to your organisation, extract relevant repositories, and study the contents of the respositories. 
 
@@ -30,7 +30,7 @@ This repository implements for the [**S**can and revie**W** of **O**pen **R**ese
 </p>
 
 <p align="center">
-  <img src="your_logo.svg">
+  <img src="docs/your_logo.svg">
 </p>
 
 ## Background
@@ -44,7 +44,7 @@ For (research) organisations, it can be interesting to have insights into the co
 ## The SWORDS framework
 
 
-- Its goal is to analyze the FAIRness of GitHub repositories of Utrecht University researchers and see how they develop and manage software. While the analysis and data collection is done for Utrecht University researchers only, the purpose of this research is to serve as a template for other researchers to scan and review repositories for their university as well.
+- Its goal is to analyze the FAIRness of GitHub repositories of {INSERT YOUR ORGANISATION NAME} researchers and see how they develop and manage software. The purpose of this research is to serve as a template for other researchers to scan and review repositories for their organisation as well.
 
 
 
@@ -55,31 +55,31 @@ The SWORDS framework consists of three mostly-independent steps. Each step is de
 3. **[Study and analyze repositories](collect_variables/)**. In this step, further variables of research repositories are gathered. These are then examined and studied on various quantitiative and qualitative properties. One can think about quality assesments, documentation availablity, FAIRness scores. 
 
 <p align="center">
-  <img src="SWORDS_basic_flow.drawio.png">
+  <img src="docs/SWORDS_basic_flow.drawio.png">
 </p>
 
-The SWORDS framework is written in Python 3.6+. The SWORDS framework implements the reproducible project structure as proposed by XXX(XXXX) for each step of the framework. For more information about the phases, please look into the corresponding subfolders for further information on installation and usage. All output data is stored in output folders. There is also a corresponding interactive data analysis jupyter notebook file in each step. This notebook can be used for results. 
+The SWORDS framework is written in Python 3.6+. The SWORDS framework implements the reproducible project structure as proposed by [Wilson et al. (2017)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510) for each step of the framework. For more information about the phases, please look into the corresponding subfolders for further information on installation and usage. All output data is stored in output folders. There is also a corresponding interactive data analysis jupyter notebook file in each step. This notebook can be used for results. 
 
 ## Results
 
 The results of the three steps of the SWORDS framework can be found in each of the subfolders of the project. Each step contains a Jupyter notebook with results, code, and narrative. Output data files can be found in the output folder in each step.  
 
 Results of step 1: **Find user profiles associated to organisation**
-- :open_book: [Analysis (Jupyter notebook)](collect_users/analyse_users.ipynb) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :inbox_tray: [Input data](collect_users/data) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :outbox_tray: [Results (data)](collect_users/output) 
+- :open_book: [Analysis (Jupyter notebook)](collect_users/analyse_users.ipynb) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :inbox_tray: [Input data](collect_users/data) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :outbox_tray: [Results (data)](collect_users/results) 
 
 Results of step 2: **Collect relevant repositories**
-- :open_book: [Analysis (Jupyter notebook)](collect_repositories/analyse_repositories.ipynb) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :inbox_tray: [Input data](collect_repositories/data) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :outbox_tray: [Results (data)](collect_repositories/output) 
+- :open_book: [Analysis (Jupyter notebook)](collect_repositories/analyse_repositories.ipynb) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :inbox_tray: [Input data](collect_repositories/data) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :outbox_tray: [Results (data)](collect_repositories/results) 
 
 Results of step 3: **Study and analyze repositories**
-- :open_book: [Analysis (Jupyter notebook)](collect_variables/analyse_metrics.ipynb) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :inbox_tray: [Input data](collect_variables/data) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :outbox_tray: [Results (data)](collect_variables/output) 
+- :open_book: [Analysis (Jupyter notebook)](collect_variables/analyse_metrics.ipynb) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :inbox_tray: [Input data](collect_variables/data) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :outbox_tray: [Results (data)](collect_variables/results) 
 
 ## Usage
 
-WIP
+In the normal use case, you start with phase 1 and go through each phase as the output of phase 1 can be used for phase 2. However, if you already have collected a list of users for example, you can skip phase 1 and use that collected list as input for phase 2. Since the phases are independent of each other, this approach is possible. For details on how to execute each phase, look into the corresponding subfolder.
 
 ## Citation
 
-Use this citation for citing the SWORDS implementation of Utrecht University.
+Use this citation for citing the SWORDS implementation of {INSERT YOUR ORGANISATION NAME}.
 ```
 {INSERT CITATION DETAILS}
 ```
@@ -87,13 +87,13 @@ Use this citation for citing the SWORDS implementation of Utrecht University.
 To cite the SWORDS project and the SWORDS template, use 
 
 ```
-@software{de_Bruin_Scan_and_revieW_2021,
+@software{de_Bruin_Scan_and_revieW_2022,
 author = {de Bruin, Jonathan and Quach, Keven and Slewe, Christopher and Lamprecht, Anna-Lena},
-month = {9},
+month = {2},
 title = {{Template of Scan and revieW of Open Research Data and Software}},
 url = {https://github.com/UtrechtUniversity/SWORDS-template},
 version = {1.0.0},
-year = {2021}
+year = {2022}
 }
 ```
 

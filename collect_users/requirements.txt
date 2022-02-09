@@ -1,0 +1,6 @@
+pandas
+matplotlib
+ghapi
+seaborn
+python-dotenv
+jupyterlab

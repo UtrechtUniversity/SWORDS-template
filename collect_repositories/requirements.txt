@@ -1,0 +1,4 @@
+pandas
+ghapi
+fastcore
+python-dotenv
