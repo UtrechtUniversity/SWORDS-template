@@ -9,7 +9,6 @@ pandas
 paperswithcode-client
 python-dotenv
 requests
-rispy
 scikit_learn
 scipy
 seaborn
