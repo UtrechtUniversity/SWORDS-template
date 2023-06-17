@@ -79,6 +79,7 @@ def parse_repo(repo_url):
             else:
                 sleep_time = api.rate_limit.get()["rate"]["reset"] - int(time.time())
                 time.sleep(sleep_time + 2)
+    return None
 
 # if unauthorized API is used, rate limit is lower,
 # leading to a ban and waiting time needs to be increased
