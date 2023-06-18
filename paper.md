@@ -49,11 +49,11 @@ bibliography: paper.bib
 The SWORDS (Scan and revieW of Open Research Data and Software) project is a powerful, open-source framework designed to provide insight into an organization's open-source activities. This comprehensive tool offers a structured approach for organizations such as universities and research institutes to evaluate their contributions to the open-source community. The framework is divided into three core stages that can be executed independently:
 
 1. Finding user profiles associated with an organization.  
-   ![Phase 1](docs/Phase_1.png)
+   ![Phase 1](docs/Phase_1.png){width=50%}
 2. Extracting relevant repositories.  
-   ![Phase 1](docs/Phase_2.png)
+   ![Phase 1](docs/Phase_2.png){width=50%}
 3. Studying the contents of the repositories. Content evaluation includes aspects of quality assessment, documentation availability, and FAIRness scores (Findability, Accessibility, Interoperability, and Reusability) [@wilkinson_fair_2016].  
-   ![Phase 1](docs/Phase_3.png)
+   ![Phase 1](docs/Phase_3.png){width=50%}
 
 Written in Python, the SWORDS project provides a template for easy implementation within any organization and focuses on GitHub, which is the go-to reference for mining open-source repositories [@cosentino_systematic_2017]
 
