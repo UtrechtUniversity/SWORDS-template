@@ -15,7 +15,6 @@ authors:
     equal-contrib: true
     affiliation: 3
   - name: Christopher Slewe
-    equal-contrib: true
   - name: Anna-Lena Lamprecht
     orcid: 0000-0003-1953-5606
     equal-contrib: true
@@ -35,7 +34,7 @@ bibliography: paper.bib
 
 # Summary
 
-The SWORDS (Scan and revieW of Open Research Data and Software) project is a powerful, open-source framework designed to provide insight into an organization's open-source activities. This comprehensive tool offers a structured approach for organizations such as universities and research institutes to evaluate their contributions to the open-source community. The framework is divided into three core stages that can be executed independently:
+SWORDS (Scan and revieW of Open Research Data and Software) project is an open-source framework designed to provide insight into an organization's open-source activities. This comprehensive tool offers a structured approach for organizations such as universities and research institutes to evaluate their contributions to the open-source community. The framework is divided into three core stages that can be executed independently:
 
 1. Finding user profiles associated with an organization.  
    ![Phase 1](docs/Phase_1.png){width=50%}
