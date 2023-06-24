@@ -1,5 +1,5 @@
 ---
-title: "Scan and revieW of Open Research Data and Software"
+title: "SWORDS: A framework for the Scan and revieW of Open Research Data and Software"
 tags:
   - Python
   - data analysis
@@ -14,7 +14,6 @@ authors:
     orcid: 0009-0002-7017-0331
     equal-contrib: true
     affiliation: 3
-  - name: Christopher Slewe
   - name: Anna-Lena Lamprecht
     orcid: 0000-0003-1953-5606
     equal-contrib: true
