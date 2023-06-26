@@ -1,36 +1,20 @@
-# Welcome to SWORDS
-
-Welcome to the **S**can and revie**W** of **O**pen **R**esearch **D**ata and **S**oftware (**SWORDS**) project. The SWORDS project is a powerful framework to gain insights in the open source activities of your, but not limited to, university or research institute. This repository is the start of your own implementation for your organisation! Read this part carefully. For any questions, please use the [issue tracker](https://github.com/UtrechtUniversity/SWORDS-template/issues). 
-
-This repository consists of 2 parts, the instruction and the template. The instruction is what you are reading right now, the template starts after `<<< The template starts here >>>` below. To implement the SWORDS framework to your organisation easily, we recommend to make use of the template function in GitHub. The instruction below helps you to implement SWORDS for your organisation in step-by-step manner. 
-
-## Getting started with SWORDS
-
-1. Define a name for your project. The recommended name is SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}. 
-2. [Create a repository from the SWORDS template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) with the name as defined in step 1. 
-3. Replace all fields in the README of your repostitory starting with `{INSERT ...}` by your details of your project and organisation. Use search `{INSERT`, because some can be harder to find. 
-4. Delete in this README everything between `<!-- REMOVE EVERYTHING BEFORE THIS LINE IN STEP 4 -->`. 
-
-## <<< The template starts here >>>
-<!-- REMOVE EVERYTHING BEFORE THIS LINE IN STEP 4 -->
-
-# SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}
+# SWORDS@UP
 
 ![banner](docs/banner.png)
 
 This repository implements for the [**S**can and revie**W** of **O**pen **R**esearch **D**ata and **S**oftware (SWORDS)](https://github.com/UtrechtUniversity/SWORDS-template) framework. SWORDS is a powerful tool to gain insights in the open source activities of your, but not limited to, university or research institute. Studies show that open source contributions can be very benificial for organisations and society. SWORDS is divided into 3 stages that can be exectued and analyzed standalone: finding user profiles associated to your organisation, extract relevant repositories, and study the contents of the respositories. 
 
 <p align="center">
-  This repository is an implementation of SWORDS for <b>{INSERT YOUR ORGANISATION NAME}</b>.
+  This repository is an implementation of SWORDS for <b>University of Potsdam</b>.
    <!-- For example Utrecht University -->
 </p>
 <p align="center">
-  <b>SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}</b>
+  <b>SWORDS@UP</b>
   <!-- For example SWORDS@UU -->
 </p>
 
 <p align="center">
-  <img src="docs/your_logo.svg">
+  <img src="docs/128px-Uni-Potsdam.png">
 </p>
 
 ## Background
