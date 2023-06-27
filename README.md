@@ -28,7 +28,7 @@ For (research) organisations, it can be interesting to have insights into the co
 ## The SWORDS framework
 
 
-- Its goal is to analyze the FAIRness of GitHub repositories of {INSERT YOUR ORGANISATION NAME} researchers and see how they develop and manage software. The purpose of this research is to serve as a template for other researchers to scan and review repositories for their organisation as well.
+- Its goal is to analyze the FAIRness of GitHub repositories of University of Potsdam researchers and see how they develop and manage software. The purpose of this research is to serve as a template for other researchers to scan and review repositories for their organisation as well.
 
 
 
@@ -63,7 +63,7 @@ In the normal use case, you start with phase 1 and go through each phase as the 
 
 ## Citation
 
-Use this citation for citing the SWORDS implementation of {INSERT YOUR ORGANISATION NAME}.
+Use this citation for citing the SWORDS implementation of University of Potsdam.
 ```
 {INSERT CITATION DETAILS}
 ```
@@ -89,7 +89,7 @@ Icons of the banner are made by [Freepik](https://www.freepik.com "Freepik") fro
 
 ## Contact
 
-For contact about this implementation of the SWORDS project, SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}, post an issue on the [issue tracker](../../issues) or contact {INSERT YOUR EMAIL}. 
+For contact about this implementation of the SWORDS project, SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}, post an issue on the [issue tracker](../../issues) or contact dekate@uni-potsdam.de . 
 
 For general questions and remarks about the SWORDS project and the template can be posted on the [issue tracker of the SWORDS template](https://github.com/UtrechtUniversity/SWORDS-template/issues). You can also contact either [Jonathan de Bruin](https://github.com/J535D165) or [Keven Quach](https://github.com/kequach). 
 
