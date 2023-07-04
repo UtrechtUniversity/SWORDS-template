@@ -89,7 +89,7 @@ Icons of the banner are made by [Freepik](https://www.freepik.com "Freepik") fro
 
 ## Contact
 
-For contact about this implementation of the SWORDS project, SWORDS@{INSERT YOUR ORGANISATION NAME ABBRAVATION}, post an issue on the [issue tracker](../../issues) or contact dekate@uni-potsdam.de . 
+For contact about this implementation of the SWORDS project, SWORDS@UP, post an issue on the [issue tracker](../../issues) or contact dekate@uni-potsdam.de . 
 
 For general questions and remarks about the SWORDS project and the template can be posted on the [issue tracker of the SWORDS template](https://github.com/UtrechtUniversity/SWORDS-template/issues). You can also contact either [Jonathan de Bruin](https://github.com/J535D165) or [Keven Quach](https://github.com/kequach). 
 

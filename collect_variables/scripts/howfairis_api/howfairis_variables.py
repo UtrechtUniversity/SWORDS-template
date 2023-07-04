@@ -81,7 +81,7 @@ def parse_repo(repo_url):
 # if unauthorized API is used, rate limit is lower,
 # leading to a ban and waiting time needs to be increased
 # see: https://github.com/fair-software/howfairis/#rate-limit
-# Delete credentials if manually applied 
+# Delete credentials if manually applied
 load_dotenv()
 token = os.getenv('GITHUB_TOKEN')
 user = os.getenv('GITHUB_USER')
