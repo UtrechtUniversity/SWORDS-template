@@ -1,4 +1,4 @@
-# This file retrieves repositories from github and gives.
+# This file retrieves repositories of organisation.
 import argparse
 import requests
 import csv
