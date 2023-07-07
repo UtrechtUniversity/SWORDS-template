@@ -6,25 +6,25 @@ tags:
   - FAIR
   - open science
 authors:
-  - name: Jonathan de Bruin
-    orcid: 0000-0002-4297-0502
-    equal-contrib: true
-    affiliation: 1
   - name: Keven Quach
     orcid: 0009-0002-7017-0331
     equal-contrib: true
-    affiliation: 3
+    corresponding: true # you should be first and corresponding author, I think
+    affiliation: 1
+  - name: Jonathan de Bruin
+    orcid: 0000-0002-4297-0502
+    equal-contrib: true
+    affiliation: 2
   - name: Anna-Lena Lamprecht
     orcid: 0000-0003-1953-5606
     equal-contrib: true
-    corresponding: true # (Who should be the corresponding author in our case?)
-    affiliation: 2
+    affiliation: 3
 affiliations:
- - name: Utrecht University, Netherlands
-   index: 1
- - name: University of Potsdam, Germany
-   index: 2
  - name: Independent Researcher, Germany
+   index: 1
+ - name: Utrecht University, Netherlands
+   index: 2
+ - name: University of Potsdam, Germany
    index: 3
 date: 18 June 2023
 bibliography: paper.bib
@@ -35,7 +35,7 @@ bibliography: paper.bib
 
 SWORDS (Scan and revieW of Open Research Data and Software) project is an open-source framework designed to provide insight into an organization's open-source activities. This comprehensive tool offers a structured approach for organizations such as universities and research institutes to evaluate their contributions to the open-source community. The framework is divided into three core stages that can be executed independently:
 
-1. Finding user profiles associated with an organization.  
+1. Finding GitHub user profiles associated with an organization.  
    ![Phase 1](../docs/Phase_1.png){width=50%}
 2. Extracting relevant repositories.  
    ![Phase 1](../docs/Phase_2.png){width=50%}
@@ -53,7 +53,6 @@ The SWORDS framework addresses this need by providing a systematic approach to c
 
 # Acknowledgements
 
-<!-- Either use acknowledgement or add Chris as an author -->
 We acknowledge contributions from Christopher Slewe during the genesis of this project.
 
 # References
