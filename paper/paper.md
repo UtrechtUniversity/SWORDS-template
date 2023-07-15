@@ -42,7 +42,7 @@ SWORDS (Scan and revieW of Open Research Data and Software) is a framework desig
 3. Studying the contents of the repositories. Content evaluation includes aspects of quality assessment, documentation availability, and FAIRness [@wilkinson_fair_2016] scores [@Spaaks_howfairis_2022] (Findability, Accessibility, Interoperability, and Reusability).  
    ![Phase 1](../docs/Phase_3.png){width=50%}
 
-Written in Python, SWORDS provides a template for easy implementation within any organization and focuses on GitHub, which is the go-to reference for mining open-source repositories [@cosentino_systematic_2017]. The framework was applied to Utrecht University as part of a research project [@quach_mapping_2022].
+Written in Python, SWORDS provides a template for easy implementation within any organization and focuses on GitHub, which is the go-to reference for mining open-source repositories [@cosentino_systematic_2017]. The framework was applied to Utrecht University as part of a research project [@quach_mapping_2022]. The results of the aforementioned research project were presented at a conference [@quach_keven_2023_8150215]. Ongoing research projects are currently being conducted at the University of Potsdam.
 
 # Statement of need
 
