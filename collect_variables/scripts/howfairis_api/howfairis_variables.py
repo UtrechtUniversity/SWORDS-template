@@ -81,6 +81,7 @@ def parse_repo(repo_url):
                 time.sleep(sleep_time + 2)
     return None
 
+
 # if unauthorized API is used, rate limit is lower,
 # leading to a ban and waiting time needs to be increased
 # see: https://github.com/fair-software/howfairis/#rate-limit
