@@ -331,6 +331,7 @@ def get_data_from_api(service: Service, repo: Repo, variable_type, verbose=True)
         request_successful = True
         time.sleep(service.sleep)
         return retrieved_variables
+    return None
 
 
 if __name__ == '__main__':
