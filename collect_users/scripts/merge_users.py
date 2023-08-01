@@ -39,7 +39,7 @@ if __name__ == '__main__':
 
     print(f"Parsing files for... \n {data_files}")
     df_github_names_long = pd.concat(
-        [pd.read_csv(fp, sep=',') for fp in data_files],
+        [pd.read_csv(fp) for fp in data_files],
         axis=0,
         keys=data_files,
         names=["source", "row"]).reset_index("source").reset_index(drop=True)
