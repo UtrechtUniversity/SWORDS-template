@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "de Bruin"
+  given-names: "Jonathan"
+  orcid: "https://orcid.org/0000-0002-4297-0502"
+- family-names: "Quach"
+  given-names: "Keven"
+  orcid: "https://orcid.org/0009-0002-7017-0331"
+- family-names: "Slewe"
+  given-names: "Christopher"
+- family-names: "Lamprecht"
+  given-names: "Anna-Lena"
+  orcid: "https://orcid.org/0000-0003-1953-5606"
+title: "Scan and revieW of Open Research Data and Software"
+version: 1.0.0
+date-released: 2023-06-17
+url: "https://github.com/UtrechtUniversity/SWORDS-template"

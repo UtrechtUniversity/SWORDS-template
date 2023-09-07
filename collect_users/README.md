@@ -9,10 +9,14 @@ Currently, the following user collection methods are available:
 
 - **[PapersWithCode](methods/papers_with_code)** The website Papers With Code (https://paperswithcode.com/) highlights Machine Learning research and the code to implement it. 
 - **[GitHub Search](methods/github_search)** Search for users on [GitHub Search](https://github.com/search/advanced) based on tags, users, and repositories given references to the organisation.
+- **[github_org_commit](methods/github_org_commit)** Script fetches the list of members from a specified GitHub organization
 
 The collection method scripts can be found in the subfolder `methods`. Each method has a subfolder `results` where the output will be located.
 
 The merging, enriching and preparation for filtering scripts can be found in the `scripts` subfolder. The output from these can be found in the `results` subfolder.
+
+After collecting users from [PapersWithCode](methods/papers_with_code) and [GitHub Search](methods/github_search) filter ``organization`` from ``.csv`` from the ``results``folders
+and then use [github_org_commit](methods/github_org_commit) to gather users committed to that organization. 
 
 ## Installation
 
@@ -66,8 +70,7 @@ There are 2 arguments that can be passed.
 Navigate to this folder and execute the script. Adjust parameters as needed. Example:
 
 ```console
-python scripts/merge_users.py --files methods/*/results/*.csv --output results/users_merged.csv
-python scripts/merge_users.py --files methods/*/results/*.csv additional_users.csv --output results/users_merged.csv
+python scripts/merge_users.py --files methods/*/results/*/*.csv methods/*/results/*.csv --output results/users_merged.csv
 ```
 
 The structure of the exported data is as follows:
@@ -86,15 +89,14 @@ There are 4 arguments that can be passed.
 
 - `--input`: The file name of the input. Default: `results/users_merged.csv`
 - `--update`: Boolean flag. Update everything including existing users or only add new users. Only relevant if fileupdate argument is provided. This is false by default.
-- `--fileupdate`: If you want to update an existing file, provide a file name in this argument. Example: `results/unique_users_annotated.xlsx`
+- `--fileupdate`: If you want to update an existing file, provide a file name in this argument. Example: `results/users_enriched.csv`
 - `--output`: The file name of the enriched output. Default: `results/users_enriched.csv`
 
 Navigate to this folder and execute the script. Adjust parameters as needed. Examples:
 
 ```console
 python scripts/enrich_users.py --input results/users_merged.csv --output results/users_enriched.csv
-python scripts/enrich_users.py --input results/users_merged.csv --fileupdate results/users_enriched.csv
-python scripts/enrich_users.py --input results/users_merged.csv --update --fileupdate results/users_enriched.csv --output results/users_enriched_updated.csv
+python scripts/enrich_users.py
 ```
 
 ### Prepare filtering
@@ -111,6 +113,7 @@ Navigate to this folder and execute the script. Adjust parameters as needed. Exa
 
 ```console
 python scripts/prepare_filtering.py
+python scripts/prepare_filtering.py --input results/users_enriched.xlsx --output results/users_enriched.xlsx
 ```
 
 ### Filter users
