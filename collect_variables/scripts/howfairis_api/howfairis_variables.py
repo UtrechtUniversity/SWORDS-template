@@ -87,6 +87,9 @@ token = os.getenv('GITHUB_TOKEN')
 user = os.getenv('GITHUB_USER')
 os.environ['APIKEY_GITHUB'] = user + ":" + token
 
+print(token)
+print(user)
+
 if __name__ == '__main__':
     # Initiate the parser
     parser = argparse.ArgumentParser()
