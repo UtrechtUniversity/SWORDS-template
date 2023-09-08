@@ -18,7 +18,7 @@ This Python script fetches the list of members from a specified GitHub organizat
 First, navigate to this folder. Then, execute the script with arguments. For example:
 
 ```console
-python github_org_commit.py --org discourse-lab orgnisation_name
+python github_org_commit.py --org orgnisation_name
 ```
 You can find the organisation names after executing [GitHub Search](methods/github_search) and filtering csv files with organiszation
 The collected GitHub user identifiers are stored in the results folder. 
