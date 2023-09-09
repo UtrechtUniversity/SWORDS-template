@@ -89,6 +89,8 @@ def parse_repo(repo_url):
 load_dotenv()
 token = os.getenv('GITHUB_TOKEN')
 user = os.getenv('GITHUB_USER')
+print(token)
+print(user)
 
 api = GhApi(token=token)
 if token is not None and user is not None:
