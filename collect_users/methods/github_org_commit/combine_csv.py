@@ -1,9 +1,22 @@
+"""
+This module provides a function to combine CSV files from subfolders into a single CSV file.
+"""
+
 import os
-import pandas as pd
 import argparse
+import pandas as pd
 
 
 def combine_csv_files_from_subfolders(root_dir):
+    """
+    Combine CSV files from subfolders into a single CSV file.
+
+    Parameters:
+    root_dir (str): The root directory containing subfolders with CSV files.
+
+    Returns:
+    None
+    """
     # Check if the provided directory exists
     if not os.path.exists(root_dir):
         print(f"The provided directory '{root_dir}' does not exist.")
@@ -22,13 +35,15 @@ def combine_csv_files_from_subfolders(root_dir):
             if file.endswith(".csv"):
                 filepath = os.path.join(subdir, file)
                 try:
-                    df = pd.read_csv(filepath)
-                    df["source_subfolder"] = os.path.basename(subdir)
-                    all_dataframes.append(df)
+                    data_frame = pd.read_csv(filepath)
+                    data_frame["source_subfolder"] = os.path.basename(subdir)
+                    all_dataframes.append(data_frame)
                     print(f"Combining '{file}' from folder '{subdir}'")
                 except pd.errors.EmptyDataError:
-                    print(
-                        f"Warning: The file '{file}' in folder '{subdir}' is empty or has no valid CSV data. Skipping.")
+                    print(f"Warning: The file '{file}' in folder '{subdir}'"
+                          " is empty or has no valid CSV data. Skipping.")
+                except FileNotFoundError:
+                    print(f"Error:file: '{file}' in folder '{subdir}' not exist. Skipping.")
 
     if not all_dataframes:
         print("No CSV files found in the specified directory and its sub-directories.")
@@ -41,7 +56,7 @@ def combine_csv_files_from_subfolders(root_dir):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Combine CSV files from subfolders into a single CSV.")
-    parser.add_argument("directory", help="Path to the root directory containing subfolders with CSV files.")
+    parser = argparse.ArgumentParser(description="Combine CSV from subfolders into a single CSV.")
+    parser.add_argument("directory", help="Path to the root directory containing subfolders.")
     args = parser.parse_args()
     combine_csv_files_from_subfolders(args.directory)

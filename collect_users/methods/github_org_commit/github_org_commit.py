@@ -1,8 +1,12 @@
+"""
+This module provides a function to get commits of a GitHub organization using the GitHub API.
+"""
+
+import os
+import argparse
+from datetime import datetime
 import requests
 import pandas as pd
-import argparse
-import os
-from datetime import datetime
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -13,52 +17,61 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
 GITHUB_USER = os.getenv("GITHUB_USER")
 
 
-def get_organization_members(org_name):
-    url = f"https://api.github.com/orgs/{org_name}/members"
+def get_organization_commits(organization_name):
+    """
+    Get commits of a GitHub organization.
+
+    Parameters:
+    organization_name (str): The name of the GitHub organization.
+
+    Returns:
+    DataFrame: A DataFrame containing the commit IDs, date, and service.
+    """
+    url = f"https://api.github.com/orgs/{organization_name}/events"
     headers = {
         "Authorization": f"token {GITHUB_TOKEN}",
         "User-Agent": GITHUB_USER
     }
 
     try:
-        response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers, timeout=10)
         response.raise_for_status()
-    except requests.RequestException as e:
-        print(f"HTTP Error: {e}")
+    except requests.RequestException as request_err:
+        print(f"HTTP Error: {request_err}")
         return pd.DataFrame()
 
-    members_data = response.json()
-    if not members_data:
-        print("No members found for the organization.")
+    commits_data = response.json()
+    if not commits_data:
+        print("No commits found for the organization.")
         return pd.DataFrame()
 
-    user_ids = [member['login'] for member in members_data]
+    commit_ids = [commit['id'] for commit in commits_data]
     date = datetime.now().strftime("%Y-%m-%d")
     service = 'github'
 
-    df = pd.DataFrame({
-        'user_id': user_ids,
-        'date': [date] * len(user_ids),
-        'service': [service] * len(user_ids)
+    data_frame = pd.DataFrame({
+        'commit_id': commit_ids,
+        'date': [date] * len(commit_ids),
+        'service': [service] * len(commit_ids)
     })
 
-    return df
+    return data_frame
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Fetch GitHub organization members and save to CSV.')
+    parser = argparse.ArgumentParser(description='Fetch and save to CSV.')
     parser.add_argument('--org', required=True, help='GitHub organization name')
 
     args = parser.parse_args()
     org_name = args.org
 
-    members_df = get_organization_members(org_name)
+    commits_df = get_organization_commits(org_name)
 
-    if not members_df.empty:
+    if not commits_df.empty:
         try:
-            members_df.to_csv(f'results/{org_name}_members.csv', index=False, encoding='utf-8')
-            print(f"Saved members of organization {org_name} to results/{org_name}_members.csv")
-        except Exception as e:
-            print(f"Failed to save CSV: {e}")
+            commits_df.to_csv(f'results/{org_name}_commits.csv', index=False, encoding='utf-8')
+            print(f"Saved commits of organization {org_name} to results/{org_name}_commits.csv")
+        except IOError as io_err:
+            print(f"Failed to save CSV: {io_err}")
     else:
-        print(f"Failed to fetch members of organization {org_name}")
+        print(f"Failed to fetch commits of organization {org_name}\n")
